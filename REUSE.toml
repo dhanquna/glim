@@ -14,3 +14,8 @@ path = "icons-original/invader/neon.svg"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2017 KDE neon <https://neon.kde.org>"
 SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "icons-original/invader/rhinolinux.svg"
+SPDX-FileCopyrightText = "Rhino Linux"
+SPDX-License-Identifier = "GPL-3.0-or-later"
