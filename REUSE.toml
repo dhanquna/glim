@@ -19,3 +19,8 @@ SPDX-License-Identifier = "CC-BY-SA-4.0"
 path = "icons-original/invader/rhinolinux.svg"
 SPDX-FileCopyrightText = "Rhino Linux"
 SPDX-License-Identifier = "GPL-3.0-or-later"
+
+[[annotations]]
+path = "icons-original/invader/ubuntumate.svg"
+SPDX-FileCopyrightText = "2014-2025 Ubuntu MATE Team <https://ubuntu-mate.org>"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
