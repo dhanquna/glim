@@ -7,10 +7,10 @@ SPDX-PackageDownloadLocation = "https://github.com/dhanquna/glim"
 path = "**"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2025 dhan <sr.dhanesh@protonmail.com>"
-SPDX-License-Identifier = "Unlicense"
+SPDX-License-Identifier = "GPL-3.0-or-later"
 
 [[annotations]]
 path = "icons-original/invader/neon.svg"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2017 KDE neon <https://neon.kde.org>"
-SPDX-License-Identifier = "CC-BY-SA-40"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
