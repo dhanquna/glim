@@ -48,54 +48,6 @@ the filesystem label 'GLIM', mount it, clone this git repository and just run
 
 Once finished, you may change the filesystem label to anything you like.
 
-The supported `boot/iso/` sub-directories (in alphabetical order) are :
-
-[//]: # (distro-list-start)
-
-* [`almalinux`](https://almalinux.org/) - _Live Media only_
-* [`antix`](https://antixlinux.com/)
-* [`arch`](https://archlinux.org/)
-* [`artix`](https://artixlinux.org/)
-* [`bodhi`](https://www.bodhilinux.com/)
-* [`calculate`](https://wiki.calculate-linux.org/desktop)
-* ~~[`centos`](https://www.centos.org/)~~ - _Live was discontinued_
-* [`clonezilla`](https://clonezilla.org/)
-* [`debian`](https://www.debian.org/CD/live/) - _live & `mini.iso`_
-* [`elementary`](https://elementary.io/)
-* [`fedora`](https://fedoraproject.org/)
-* [`finnix`](https://www.finnix.org/)
-* [`gentoo`](https://www.gentoo.org/)
-* [`gparted`](https://gparted.org/)
-* [`grml`](https://grml.org/)
-* [`ipxe`](https://ipxe.org/) - _.iso or .efi_
-* [`kali`](https://www.kali.org/)
-* [`kubuntu`](https://kubuntu.org/)
-* [`libreelec`](https://libreelec.tv/)
-* [`linuxmint`](https://linuxmint.com/)
-* [`lubuntu`](https://lubuntu.me/)
-* [`manjaro`](https://manjaro.org/)
-* [`memtest`](https://memtest.org/) - _Only .bin/.efi, not .iso_
-* [`mxlinux`](https://mxlinux.org/)
-* [`netrunner`](https://www.netrunner.com/)
-* [`openbsd`](https://www.openbsd.org/)
-* [`opensuse`](https://www.opensuse.org/) - _Live from Alternative Downloads only_
-* [`peppermint`](https://peppermintos.com/)
-* [`popos`](https://pop.system76.com/)
-* [`porteus`](http://www.porteus.org/)
-* [`rhel`](https://www.redhat.com/rhel) - _Installation only_
-* [`rockylinux`](https://rockylinux.org/)
-* [`slitaz`](https://slitaz.org/)
-* [`supergrub2disk`](https://www.supergrubdisk.org/)
-* [`systemrescue`](https://www.system-rescue.org/)
-* [`tails`](https://tails.net/)
-* [`ubuntubudgie`](https://ubuntubudgie.org/)
-* [`ubuntu`](https://ubuntu.com/)
-* [`void`](https://voidlinux.org/)
-* [`xubuntu`](https://xubuntu.org/)
-* [`zorinos`](https://zorin.com/os/)
-
-[//]: # (distro-list-end)
-
 Any unpopulated directory will have the matching boot menu entry automatically
 disabled, so to skip any distribution, just don't copy any files into it.
 

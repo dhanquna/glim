@@ -9,6 +9,9 @@ if [[ `id -u` -eq 0 ]]; then
   exit 1
 fi
 
+SCRIPT_PATH=$( cd $(dirname $0) ; pwd)
+cd "${SCRIPT_PATH}"
+
 # Sanity check : GRUB2
 if which grub2-install &>/dev/null; then
   GRUB2_INSTALL="grub2-install"
@@ -23,7 +26,7 @@ if [[ -z "$GRUB2_INSTALL" ]]; then
 fi
 
 # Sanity check : Our GRUB2 configuration
-GRUB2_CONF="`dirname $0`/grub2"
+GRUB2_CONF="${SCRIPT_PATH}/grub2"
 if [[ ! -f ${GRUB2_CONF}/grub.cfg ]]; then
   echo "ERROR: grub2/grub.cfg to use not found."
   exit 1
@@ -161,12 +164,9 @@ fi
 echo "GLIM installed! Time to populate the boot/iso/ sub-directories."
 
 # Now also pre-create all supported sub-directories since empty are ignored
-args=(
-  -E -n
-  '/\(distro-list-start\)/,/\(distro-list-end\)/{s,^\* \[`([a-z0-9]+)`\].*$,\1,p}'
-)
-
-for DIR in $(sed "${args[@]}" "$(dirname "$0")"/README.md); do
+for filename in "${SCRIPT_PATH}"/grub2/inc-*.cfg
+do
+  DIR=`echo "${filename}" | sed 's|.*grub2/inc-\(.*\)\.cfg|\1|'`
   [[ -d ${USBMNT}/boot/iso/${DIR} ]] || ${CMD_PREFIX} mkdir ${USBMNT}/boot/iso/${DIR}
 done
 
